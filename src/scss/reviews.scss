@@ -113,3 +113,123 @@
   border-radius: 12px;
   padding: 16px;
 }
+
+.visibility {
+  display: none;
+}
+
+.accordion {
+  display: none;
+  gap: 100px;
+  grid-template-areas:
+    'item1 item2'
+    'item3 item3'
+    'item4 item5';
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 12px 12px 12px 12px;
+  background-color: #8da93b;
+  width: 426px;
+}
+
+.accordion-item:nth-child(1) {
+  grid-area: item1;
+}
+
+.accordion-item:nth-child(2) {
+  grid-area: item2;
+}
+
+.accordion-item:nth-child(3) {
+  grid-area: item3;
+  margin: 0 auto;
+}
+
+.accordion-item:nth-child(4) {
+  grid-area: item4;
+}
+
+.accordion-item:nth-child(5) {
+  grid-area: item5;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 12px 12px 12px 12px;
+  gap: 10px;
+  width: 426px;
+
+  // border-radius: 12px;
+  padding: 36px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #8da93b;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease, padding 0.7s ease;
+  padding: 0px 36px;
+}
+
+.accordion-content p {
+  margin: 0;
+  padding-bottom: 36px;
+}
+
+@include media(desktop) {
+  .reviews-section-wrapper,
+  .button-container {
+    display: none;
+  }
+
+  .accordion {
+    display: grid;
+  }
+
+  .visibility {
+    display: block;
+  }
+
+  .reviews-main-title {
+    @include font(64, 72);
+    margin-bottom: 100px;
+  }
+
+  .reviews-section {
+    width: 1200px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .reviews-title {
+    @include font(24, 36);
+  }
+
+  .reviews-text {
+    @include font(24, 24);
+  }
+
+  .accordion {
+  }
+}
+
+/////////////////////////////////////////

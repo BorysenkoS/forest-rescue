@@ -7,3 +7,20 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.button-next',
   },
 });
+
+document.querySelectorAll('.accordion-header').forEach(button => {
+  button.addEventListener('click', () => {
+    const accordionContent = button.nextElementSibling;
+
+    button.classList.toggle('active');
+
+    if (button.classList.contains('active')) {
+      accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+      accordionContent.style.paddingBottom = '36px';
+    } else {
+      accordionContent.style.maxHeight = 0;
+      accordionContent.style.paddingTop = 0;
+      accordionContent.style.paddingBottom = 0;
+    }
+  });
+});
