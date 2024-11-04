@@ -3,7 +3,6 @@
   justify-content: center;
   position: fixed;
   z-index: 2;
-
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -19,7 +18,8 @@
   padding: 8px 16px;
   background-color: #db4200;
   border-radius: 12px;
-  width: 288px;
+
+  min-width: 288px;
 }
 
 .nav-wrapper {

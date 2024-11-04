@@ -1,0 +1,71 @@
+.adventure-section {
+  padding: 64px 16px;
+  width: 288px;
+}
+
+.adventure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adventure-title {
+  padding: 0px 30px;
+  font-family: 'Cherry Bomb', sans-serif;
+  @include font(20, 24);
+  font-weight: 400;
+  text-align: center;
+  color: $_accent_color;
+
+  margin-bottom: 20px;
+}
+
+.adventure-text-one {
+  font-family: 'Josefin Sans', sans-serif;
+  @include font(12, 16);
+  font-weight: 500;
+  letter-spacing: 0.0012em;
+
+  margin-bottom: 20px;
+}
+
+.adventure-text {
+  font-family: 'Josefin Sans', sans-serif;
+  @include font(12, 16);
+  font-weight: 500;
+  letter-spacing: 0.0012em;
+
+  margin-bottom: 36px;
+}
+
+.adventure-img {
+  width: 256px;
+  height: 72px;
+}
+
+@include media(desktop) {
+  .adventure-section {
+    padding: 120px 325px;
+    min-width: 1200px;
+  }
+
+  .adventure-title {
+    @include font(28, 28);
+    margin-bottom: 32px;
+  }
+
+  .adventure-text {
+    @include font(20, 28);
+    margin-bottom: 56px;
+  }
+
+  .adventure-span {
+    font-weight: 700;
+  }
+
+  .adventure-img {
+    width: 288px;
+    height: 84px;
+  }
+}
