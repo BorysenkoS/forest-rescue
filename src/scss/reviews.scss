@@ -127,7 +127,7 @@
     'item4 item5';
   justify-content: center;
   align-items: center;
-
+  padding-bottom: 16px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -138,6 +138,7 @@
   align-items: center;
   justify-content: space-between;
 
+  box-shadow: 16px 16px 4px 0px #05150140;
   border-radius: 12px 12px 12px 12px;
   background-color: #8da93b;
   width: 426px;
@@ -171,6 +172,7 @@
 
   border-radius: 12px 12px 12px 12px;
   gap: 10px;
+
   width: 426px;
 
   // border-radius: 12px;
