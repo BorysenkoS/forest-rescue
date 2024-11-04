@@ -124,6 +124,11 @@
   z-index: 1; /* Задаємо більший z-index, щоб лінія була над секцією */
 }
 
+.link-google {
+  width: 256px;
+  height: 72px;
+}
+
 @include media(desktop) {
   .general-background {
     padding-top: 40px;
@@ -179,5 +184,10 @@
 
   .road-line {
     display: block;
+  }
+
+  .link-google {
+    width: 288px;
+    height: 84px;
   }
 }

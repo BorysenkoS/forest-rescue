@@ -1,1 +1,115 @@
+.reviews-section-container {
+  display: flex;
+  justify-content: center;
+}
 
+.reviews-section {
+  padding: 64px 16px;
+  width: 320px;
+  position: relative;
+}
+
+.reviews-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-bottom: 24px;
+}
+
+.reviews-main-title {
+  font-family: Cherry Bomb, sans-serif;
+  font-weight: 400;
+  @include font(28, 28);
+  color: $_accent_color;
+  text-shadow: 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200;
+
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+// .right {
+//   margin-left: 54px;
+// }
+
+.swiper-slide:nth-child(even) {
+  margin-left: 52px;
+  transition: margin 0.7s ease; /* Зміщує кожен непарний елемент вправо */
+}
+
+.swiper-slide:nth-child(odd) {
+  margin-left: 0px;
+  transition: margin 0.7s ease; /* Зміщує кожен непарний елемент вправо */
+}
+
+.reviews-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviews-image {
+  width: 48px;
+  height: 40px;
+}
+
+.reviews-title {
+  font-family: Cherry Bomb, sans-serif;
+  font-weight: 400;
+  @include font(16, 16);
+  color: #112e16;
+}
+
+.reviews-text {
+  font-family: Josefin Sans, sans-serif;
+  @include font(12, 16);
+  font-weight: 500;
+  color: #112e16;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.reviews-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.reviews-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  overflow: hidden;
+}
+
+/* Swiper styles */
+
+.swiper-container {
+  height: 445px;
+  margin-bottom: 24px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  height: 128px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 228px;
+  background-color: #8da93b;
+  box-shadow: 8px 8px 4px 0px #05150140;
+  border-radius: 12px;
+  padding: 16px;
+}
