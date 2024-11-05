@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
   loop: true, // Дозволяє безперервне прокручування
   navigation: {
     nextEl: '.swiper-button-next',

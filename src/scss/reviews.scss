@@ -90,19 +90,19 @@
 
 /* Swiper styles */
 
-.swiper-container {
+.swiper2 {
   height: 445px;
   margin-bottom: 24px;
 }
 
-.swiper-wrapper {
+.swiper2 .swiper-wrapper {
   display: flex;
   flex-direction: column;
 
   height: 128px;
 }
 
-.swiper-slide {
+.swiper2 .swiper-slide {
   display: flex;
   flex-direction: column;
   gap: 8px;

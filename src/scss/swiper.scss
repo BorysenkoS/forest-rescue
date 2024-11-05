@@ -1,123 +1,112 @@
-.swiper {
-  width: 264px;
-  height: 500px;
-  margin-bottom: 200px;
-  display: flex;
-  position: relative;
+.gallery-section {
+  padding: 48px 0;
+
+  @include media(desktop) {
+    padding-top: 64px;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
 }
 
-.swiper-title {
-  margin-bottom: 28px;
-  font-family: 'Cherry Bomb', sans-serif;
+.gallery-wrap {
+  padding: 0 16px;
+  @include media(desktop) {
+    padding: 0 100px;
+  }
+}
+
+.gallery-swiper-container {
+  position: relative;
+  @include media(desktop) {
+    padding-left: 125px;
+    padding-right: 48px;
+  }
+}
+
+.gallery-section-title {
+  font-family: Cherry Bomb, sans-serif;
   font-weight: 400;
   @include font(28, 28);
   color: $_accent_color;
-  text-shadow: 2px 2px 0px #db4200, -2px 2px 0px #db4200, 2px -2px 0px #db4200,
-    -2px -2px 0px #db4200;
+  text-shadow: 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200;
+
   text-align: center;
+  margin-bottom: 28px;
+  @include media(desktop) {
+    margin-bottom: 48px;
+    @include font(64, 72);
+  }
+}
+
+.gallery-swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.gallery-swiper-slide {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 16px;
+  width: 264px !important;
+  background-color: #a9cf39;
+}
+
+.gallery-swiper-slide img {
+  display: block;
+  margin: 0 auto;
+  width: 224px;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  position: static !important;
+  margin-top: 40px !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: #fffdf9 !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fffdf9 !important;
 }
 
 .swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  color: #fff;
-  position: relative;
+  @include media(desktop) {
+    margin-left: 0px !important;
+  }
 }
 
-.back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 264px;
-  height: 388px;
-  border-radius: 8px;
-  background: #a9cf39;
-}
-
-.swiper-img {
-  display: block;
-  width: 224px;
-  height: 348px;
-  border-radius: 8px;
-  object-fit: cover;
+.swiper-slide-active {
+  @include media(desktop) {
+    transform: translateY(90px);
+  }
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #fff;
-  width: 38px;
-  height: 30px;
   position: absolute;
-  top: 100%;
-  transform: translateY(515%);
-  margin: 80px;
-}
-
-.swiper-button-next {
+  top: 50%;
   right: 0;
-}
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
 
-.swiper-button-prev {
-  left: 0;
-}
-
-.swiper-pagination {
-  display: none;
-}
-
-@include media(desktop) {
-  .swiper {
-    width: 1200px;
-    height: 956px;
-    margin: 0 auto;
-  }
-
-  .swiper-slide-active .back {
-    transform: translateY(90px);
-    background-color: #f9e000;
-  }
-
-  .swiper-title {
-    margin-bottom: 28px;
-  }
-
-  .swiper-wrapper {
-    display: flex;
-    align-items: center;
-    margin: 0 60px;
-    position: relative;
-  }
-
-  .swiper-slide {
-    transition: transform 0.3s ease;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    // top: 50%;
-    margin: 340px;
-    transform: translateY(115%);
-  }
-
-  .swiper-pagination {
-    display: block;
-    margin-bottom: 350px;
-  }
-
-  .swiper-pagination-bullet {
-    background: #f9e000 !important;
-    width: 24px !important;
-    height: 24px !important;
-    border-radius: 3px !important;
-    opacity: 0.7 !important;
-    margin: 0 5px !important;
-    transition: background 0.3s !important;
-  }
-
-  .swiper-pagination-bullet-active {
-    border: 2px solid #db4200;
-    border-radius: 5px;
+  @include media(desktop) {
+    transform: translateY(320%);
+    margin: 200px;
   }
 }
