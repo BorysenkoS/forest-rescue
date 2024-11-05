@@ -1,26 +1,5 @@
 .gallery-section {
-  padding: 48px 0;
-
-  @include media(desktop) {
-    padding-top: 64px;
-    padding-left: 52px;
-    padding-right: 52px;
-  }
-}
-
-.gallery-wrap {
-  padding: 0 16px;
-  @include media(desktop) {
-    padding: 0 100px;
-  }
-}
-
-.gallery-swiper-container {
-  position: relative;
-  @include media(desktop) {
-    padding-left: 125px;
-    padding-right: 48px;
-  }
+  padding: 64px 0;
 }
 
 .gallery-section-title {
@@ -41,72 +20,41 @@
   }
 }
 
-.gallery-swiper {
-  width: 100%;
-  overflow: hidden;
+.container2 {
+  align-items: center;
+  width: 264px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.gallery-swiper-container {
+  width: 264px;
+  height: 388px;
+}
+
+.swiper1 {
+  width: 264px;
+  height: 388px;
 }
 
 .gallery-swiper-wrapper {
   display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery-swiper-wrapper .swiper-slide {
+  width: 264px !important;
+  height: 388px;
+  border-radius: 16px;
+  background-color: #a9cf39;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.gallery-swiper-slide {
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 16px;
-  width: 264px !important;
-  background-color: #a9cf39;
-}
-
-.gallery-swiper-slide img {
-  display: block;
-  margin: 0 auto;
-  width: 224px;
-  height: auto;
-  object-fit: cover;
-}
-
-.swiper-pagination {
-  position: static !important;
-  margin-top: 40px !important;
-}
-
-.swiper-pagination .swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
-  background-color: #fffdf9 !important;
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fffdf9 !important;
-}
-
-.swiper-slide {
-  @include media(desktop) {
-    margin-left: 0px !important;
-  }
-}
-
-.swiper-slide-active {
-  @include media(desktop) {
-    transform: translateY(90px);
-  }
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: none;
-
-  @include media(desktop) {
-    transform: translateY(320%);
-    margin: 200px;
-  }
+.gallery-swiper-wrapper .swiper-slide img {
+  width: 224px !important;
+  height: 348px !important;
+  object-fit: contain;
 }
