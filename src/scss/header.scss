@@ -3,8 +3,7 @@
   justify-content: center;
   position: fixed;
   z-index: 2;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
 }
 
 .logo {
@@ -31,7 +30,7 @@
 }
 
 .nav-list-item {
-  font-family: Cherry Bomb;
+  font-family: 'Cherry Bomb', sans-serif;
   font-weight: 400;
   @include font(20, 24);
   color: $_accent_color;
@@ -43,8 +42,8 @@
 
   border: none;
   background: transparent;
-  display: block;
   padding: 0;
+  display: block;
 }
 
 .modal {
@@ -62,11 +61,10 @@
 }
 
 .hidden {
-  display: none;
+  right: -100%;
 }
 
 .show {
-  display: block;
   right: 0;
 }
 
@@ -82,7 +80,7 @@
 
 .close-button-wrapper {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 
   padding-right: 12px;
 }
@@ -107,8 +105,7 @@
 
 @include media(desktop) {
   .header {
-    padding-left: 72px;
-    padding-right: 72px;
+    padding: 0 72px;
   }
 
   .button-burger-menu {
