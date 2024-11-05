@@ -1,0 +1,61 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-section {
+  max-width: 320px;
+  padding: 32px 16px;
+}
+
+.about-title {
+  font-family: 'Cherry Bomb', sans-serif;
+  @include font(28, 28);
+  font-weight: 400;
+  text-align: center;
+  color: $_accent_color;
+  text-shadow: 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200;
+
+  margin-bottom: 28px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  gap: 16px;
+}
+
+.about-text {
+  font-family: 'Josefin Sans', sans-serif;
+  @include font(12, 16);
+  font-weight: 500;
+  color: #f5f5c9;
+}
+
+.about-image-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.about-image {
+  width: 120px;
+  height: 136px;
+}
+
+.about-image-2 {
+  margin-top: 25%;
+}
+
+.about-text-after-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto;
+  width: 248px;
+}

@@ -1,0 +1,125 @@
+.advantages-container {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages-section {
+  max-width: 320px;
+
+  background-image: url('../img/advantures/central-backgroung-image-1x.png');
+  background-repeat: no-repeat;
+  background-position-y: 57%;
+}
+
+.advantages-title {
+  font-family: 'Cherry Bomb', sans-serif;
+  @include font(28, 28);
+  font-weight: 400;
+  text-align: center;
+  color: $_accent_color;
+  margin-bottom: 28px;
+
+  text-shadow: 0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200,
+    0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200,
+    0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200,
+    0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200;
+}
+
+.advantages-text {
+  font-family: 'Josefin Sans', sans-serif;
+  @include font(12, 16);
+  font-weight: 500;
+  color: #112e16;
+}
+
+.first-block {
+  margin-left: auto;
+  margin-bottom: 24px;
+  width: 212px;
+}
+
+.second-block {
+  width: 212px;
+}
+
+.top-background-image {
+  margin-bottom: 185px;
+  background-image: url('../img/advantures/advantures-bg-1x.png');
+  max-width: 320px;
+  height: 283px;
+  padding: 73px 16px 58px 16px;
+}
+
+.bottom-background-image {
+  background-image: url('../img/advantures/advantures-bg-1x.png');
+  width: 320px;
+  height: 283px;
+  padding: 73px 16px 58px 16px;
+}
+
+.advantages-desktop-section {
+  display: none;
+}
+
+.advantages-desktop-background {
+  height: 858px;
+
+  display: flex;
+  gap: 24px;
+}
+
+@include media(desktop) {
+  .advantages-container {
+  }
+
+  .background {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url('../img/advantures/advantages-bg-deck-1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-position-y: 70%;
+  }
+
+  .advantages-section {
+    display: none;
+  }
+
+  .advantages-desktop-section {
+    width: 1056px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .advantages-title {
+    @include font(64, 72);
+    margin-bottom: 100px;
+  }
+
+  .advantages-text {
+    @include font(20, 28);
+  }
+
+  .advantages-image {
+    margin-left: 180px;
+    margin-bottom: 24px;
+  }
+
+  .advantages-text-wrapper {
+    width: 426px;
+  }
+
+  .advantages-desk-block-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding-top: 251px;
+  }
+
+  .advantages-text-wrapper-1 {
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
+}
