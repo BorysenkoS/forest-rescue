@@ -1,6 +1,10 @@
 import Swiper from 'swiper';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/bundle';
+Swiper.use([Pagination]);
 const swiper = new Swiper('.swiper', {
+  modules: [Pagination],
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
