@@ -1,4 +1,6 @@
-const swiper = new Swiper('.swiper1', {
+import Swiper from 'swiper';
+import 'swiper/css';
+const swiper = new Swiper('.swiper', {
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -14,7 +16,7 @@ const swiper = new Swiper('.swiper1', {
       slidesPerView: 3,
     },
   },
-  spaceBetween: 30,
+  // spaceBetween: 30,
   centeredSlides: true,
 });
 

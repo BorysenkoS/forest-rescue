@@ -1,237 +1,240 @@
 .reviews-section-container {
   display: flex;
   justify-content: center;
-}
 
-.reviews-section {
-  padding: 64px 16px;
-  width: 320px;
-  position: relative;
-}
+  .reviews-section {
+    padding: 64px 16px;
 
-.reviews-list-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+    position: relative;
+  }
 
-  margin-bottom: 24px;
-}
+  .reviews-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 
-.reviews-main-title {
-  font-family: Cherry Bomb, sans-serif;
-  font-weight: 400;
-  @include font(28, 28);
-  color: $_accent_color;
-  text-shadow: 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
-    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
-    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
-    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200;
+    margin-bottom: 24px;
+  }
 
-  text-align: center;
-  margin-bottom: 28px;
-}
+  .reviews-main-title {
+    font-family: Cherry Bomb, sans-serif;
+    font-weight: 400;
+    @include font(28, 28);
+    color: $_accent_color;
+    text-shadow: 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+      0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+      0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+      0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200;
 
-// .right {
-//   margin-left: 54px;
-// }
+    text-align: center;
+    margin-bottom: 28px;
+  }
 
-.swiper-slide:nth-child(even) {
-  margin-left: 52px;
-  transition: margin 0.7s ease; /* Зміщує кожен непарний елемент вправо */
-}
+  // .right {
+  //   margin-left: 54px;
+  // }
 
-.swiper-slide:nth-child(odd) {
-  margin-left: 0px;
-  transition: margin 0.7s ease; /* Зміщує кожен непарний елемент вправо */
-}
+  .swiper-slide:nth-child(even) {
+    margin-left: 52px;
+    transition: margin 0.7s ease; /* Зміщує кожен непарний елемент вправо */
+  }
 
-.reviews-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+  .swiper-slide:nth-child(odd) {
+    margin-left: 0px;
+    transition: margin 0.7s ease; /* Зміщує кожен непарний елемент вправо */
+  }
 
-.reviews-image {
-  width: 48px;
-  height: 40px;
-}
+  .swiper-slide {
+    height: 128px !important;
+  }
 
-.reviews-title {
-  font-family: Cherry Bomb, sans-serif;
-  font-weight: 400;
-  @include font(16, 16);
-  color: #112e16;
-}
+  .reviews-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 
-.reviews-text {
-  font-family: Josefin Sans, sans-serif;
-  @include font(12, 16);
-  font-weight: 500;
-  color: #112e16;
-}
+  .reviews-image {
+    width: 48px;
+    height: 40px;
+  }
 
-.button-container {
-  text-align: center;
-}
+  .reviews-title {
+    font-family: Cherry Bomb, sans-serif;
+    font-weight: 400;
+    @include font(16, 16);
+    color: #112e16;
+  }
 
-.reviews-button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
+  .reviews-text {
+    font-family: Josefin Sans, sans-serif;
+    @include font(12, 16);
+    font-weight: 500;
+    color: #112e16;
+  }
 
-.reviews-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  overflow: hidden;
-}
-
-/* Swiper styles */
-
-.swiper2 {
-  height: 445px;
-  margin-bottom: 24px;
-}
-
-.swiper2 .swiper-wrapper {
-  display: flex;
-  flex-direction: column;
-
-  height: 128px;
-}
-
-.swiper2 .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  width: 228px;
-  background-color: #8da93b;
-  box-shadow: 8px 8px 4px 0px #05150140;
-  border-radius: 12px;
-  padding: 16px;
-}
-
-.visibility {
-  display: none;
-}
-
-.accordion {
-  display: none;
-  gap: 100px;
-  grid-template-areas:
-    'item1 item2'
-    'item3 item3'
-    'item4 item5';
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 16px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.accordion-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  box-shadow: 16px 16px 4px 0px #05150140;
-  border-radius: 12px 12px 12px 12px;
-  background-color: #8da93b;
-  width: 426px;
-}
-
-.accordion-item:nth-child(1) {
-  grid-area: item1;
-}
-
-.accordion-item:nth-child(2) {
-  grid-area: item2;
-}
-
-.accordion-item:nth-child(3) {
-  grid-area: item3;
-  margin: 0 auto;
-}
-
-.accordion-item:nth-child(4) {
-  grid-area: item4;
-}
-
-.accordion-item:nth-child(5) {
-  grid-area: item5;
-}
-
-.accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  border-radius: 12px 12px 12px 12px;
-  gap: 10px;
-
-  width: 426px;
-
-  // border-radius: 12px;
-  padding: 36px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #8da93b;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.7s ease, padding 0.7s ease;
-  padding: 0px 36px;
-}
-
-.accordion-content p {
-  margin: 0;
-  padding-bottom: 36px;
-}
-
-@include media(desktop) {
-  .reviews-section-wrapper,
   .button-container {
+    text-align: center;
+  }
+
+  .reviews-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .reviews-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+  }
+
+  /* Swiper styles */
+
+  .swiper2 {
+    height: 432px !important;
+    margin-bottom: 24px;
+  }
+
+  .swiper2 .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    height: 128px;
+  }
+
+  .swiper2 .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 228px;
+    background-color: #8da93b;
+    box-shadow: 8px 8px 4px 0px #05150140;
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  .visibility {
     display: none;
   }
 
   .accordion {
-    display: grid;
+    display: none;
+    gap: 100px;
+    grid-template-areas:
+      'item1 item2'
+      'item3 item3'
+      'item4 item5';
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
-  .visibility {
-    display: block;
+  .accordion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 16px 16px 4px 0px #05150140;
+    border-radius: 12px 12px 12px 12px;
+    background-color: #8da93b;
+    width: 426px;
   }
 
-  .reviews-main-title {
-    @include font(64, 72);
-    margin-bottom: 100px;
+  .accordion-item:nth-child(1) {
+    grid-area: item1;
   }
 
-  .reviews-section {
-    width: 1200px;
-    padding-top: 90px;
-    padding-bottom: 90px;
+  .accordion-item:nth-child(2) {
+    grid-area: item2;
   }
 
-  .reviews-title {
-    @include font(24, 36);
+  .accordion-item:nth-child(3) {
+    grid-area: item3;
+    margin: 0 auto;
   }
 
-  .reviews-text {
-    @include font(24, 24);
+  .accordion-item:nth-child(4) {
+    grid-area: item4;
   }
 
-  .accordion {
+  .accordion-item:nth-child(5) {
+    grid-area: item5;
+  }
+
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 12px 12px 12px 12px;
+    gap: 10px;
+
+    width: 426px;
+
+    // border-radius: 12px;
+    padding: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #8da93b;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease, padding 0.7s ease;
+    padding: 0px 36px;
+  }
+
+  .accordion-content p {
+    margin: 0;
+    padding-bottom: 36px;
+  }
+
+  @include media(desktop) {
+    .reviews-section-wrapper,
+    .button-container {
+      display: none;
+    }
+
+    .accordion {
+      display: grid;
+    }
+
+    .visibility {
+      display: block;
+    }
+
+    .reviews-main-title {
+      @include font(64, 72);
+      margin-bottom: 100px;
+    }
+
+    .reviews-section {
+      width: 1200px;
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+
+    .reviews-title {
+      @include font(24, 36);
+    }
+
+    .reviews-text {
+      @include font(24, 24);
+    }
+
+    .accordion {
+    }
   }
 }
-
 /////////////////////////////////////////
