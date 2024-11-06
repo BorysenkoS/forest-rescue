@@ -105,7 +105,7 @@
 
   & .swiper-button-prev,
   .swiper-button-next {
-    position: absolute;
+    position: relative;
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -119,20 +119,10 @@
   }
 
   .swiper-button-prev {
-    left: 105px;
+    left: -20px;
   }
   .swiper-button-next {
-    right: 105px;
-  }
-
-  @include media(desktop) {
-    .swiper-button-prev {
-      left: 160px;
-    }
-
-    .swiper-button-next {
-      right: 160px;
-    }
+    right: -20px;
   }
 
   & .swiper-pagination {
