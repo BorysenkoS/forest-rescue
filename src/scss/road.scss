@@ -1,0 +1,15 @@
+.road-img {
+  width: 100%;
+  height: 101px;
+}
+
+@include media(desktop) {
+  .road-container {
+    width: 100%;
+  }
+
+  .road-img {
+    width: 100%;
+    height: 265px;
+  }
+}

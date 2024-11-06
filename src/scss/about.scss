@@ -72,6 +72,10 @@
 }
 
 @include media(desktop) {
+  .about-container {
+    margin-bottom: 100px;
+  }
+
   .about-wrapper {
     display: none;
   }
