@@ -6,6 +6,9 @@ const swiper = new Swiper('.swiper2', {
   navigation: {
     nextEl: '.button-next',
   },
+  simulateTouch: false,
+  keyboard: false,
+  mousewheel: false,
 });
 
 document.querySelectorAll('.accordion-header').forEach(button => {
