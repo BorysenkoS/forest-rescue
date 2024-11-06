@@ -12,7 +12,7 @@
 
 .hero-section {
   position: relative;
-  padding: 100px 16px 44px 16px;
+  padding: 100px 16px 41px 16px;
   max-width: 320px;
 }
 
@@ -25,7 +25,7 @@
   font-weight: 400;
   @include font(32, 32);
   margin-right: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: $_accent_color;
 
   text-shadow: 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
@@ -38,7 +38,7 @@
   font-family: 'Cherry Bomb', sans-serif;
   font-weight: 400;
   @include font(32, 32);
-  margin-left: auto;
+  margin-left: 68px;
   margin-bottom: 20px;
   color: $_accent_color;
 
@@ -55,6 +55,7 @@
 .hero-link {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .hero-link-wrapper {
@@ -125,11 +126,13 @@
   .general-background {
     padding-top: 40px;
     background-image: url('../img/hero/hero-bg-desc-2x.jpg');
-    width: 1280px;
+    background-size: cover;
+    max-width: 1280px;
   }
 
   .hero-section {
     padding: 176px 72px 177px 72px;
+    // padding: 0px;
     min-width: 1200px;
 
     display: flex;
@@ -151,6 +154,7 @@
   .hero-title-span {
     @include font(64, 72);
     margin-bottom: 36px;
+    margin-left: 0px;
   }
 
   .hero-img {
@@ -160,6 +164,7 @@
   .title-link-wrapper {
     width: 448px;
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
