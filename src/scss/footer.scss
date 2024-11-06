@@ -84,13 +84,23 @@
           @include font(20, 28);
         }
       }
+
       .link:hover,
       .link:focus {
         color: #db4200;
       }
-      .link:current {
+
+      .link.privacy:visited {
         color: #457036;
       }
+
+      .link.terms:visited {
+        color: #457036;
+      }
+
+      // .link:current {
+      //   color: #457036;
+      // }
     }
   }
 
