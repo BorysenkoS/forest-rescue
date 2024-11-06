@@ -118,6 +118,14 @@
     }
   }
 
+  .swiper-button-prev:hover {
+    content: url('/img/swiperImg/hover-left.png');
+  }
+
+  .swiper-button-next:hover {
+    content: url('/img/swiperImg/hover-right.png');
+  }
+
   .swiper-button-prev {
     left: -20px;
   }
