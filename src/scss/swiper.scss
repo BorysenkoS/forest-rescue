@@ -96,6 +96,7 @@
 
   & .swiper-button-prev,
   .swiper-button-next {
+    cursor: pointer;
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -106,6 +107,16 @@
       width: 66px;
       height: 48px;
     }
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-prev:focus {
+    content: url('../img/swiperImg/hover-left.png');
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-next:focus {
+    content: url('../img/swiperImg/hover-right.png');
   }
   @include media(desktop) {
     & .swiper-slide-active .back {

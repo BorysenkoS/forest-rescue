@@ -95,9 +95,16 @@ h3 {
   color: #f6f6f6;
 }
 
+.span-back-to-home {
+  display: none;
+}
+
 @include media(desktop) {
   .terms-of-service {
     max-width: 1200px;
+  }
+  .span-back-to-home {
+    display: block;
   }
 
   .link-home {

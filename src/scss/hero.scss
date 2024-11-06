@@ -75,18 +75,18 @@
   gap: 12px;
 }
 
-.hero-link-wrapper:hover,
-.hero-link-wrapper:focus {
-  background-color: #db4200;
-  color: #f8ffa1;
-}
+// .hero-link-wrapper:hover,
+// .hero-link-wrapper:focus {
+//   background-color: #db4200;
+//   color: #f8ffa1;
+// }
 
-.hero-link-span {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.0012em;
-  @include font(14, 20);
-}
+// .hero-link-span {
+//   font-family: 'Josefin Sans', sans-serif;
+//   font-weight: 700;
+//   letter-spacing: 0.0012em;
+//   @include font(14, 20);
+// }
 
 .hero-link-img {
   width: 40px;
@@ -120,6 +120,11 @@
 .link-google {
   width: 256px;
   height: 72px;
+  transition: opacity 1.7s;
+}
+
+.link-google:hover {
+  content: url('../img/hero/google-play-hover-1x.png');
 }
 
 @include media(desktop) {

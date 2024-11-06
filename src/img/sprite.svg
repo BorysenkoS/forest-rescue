@@ -17,5 +17,6 @@
 <symbol id="icon-arrow-down" viewBox="0 0 32 32">
 <path fill="#f9e000" style="fill: var(--color1, #f9e000)" d="M15.6 25.6l-13.51-14.4h27.020l-13.51 14.4z"></path>
 </symbol>
+
 </defs>
 </svg>
