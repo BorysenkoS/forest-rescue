@@ -7,7 +7,7 @@
   @include media(desktop) {
     height: 956px;
     width: 1200px;
-    margin-bottom: 180px;
+    margin-bottom: 150px;
   }
 
   & .swiper-title {
@@ -60,6 +60,12 @@
     }
   }
 
+  @include media(desktop) {
+    & .swiper-slide-active .back {
+      background-color: #f9e000;
+    }
+  }
+
   & .back {
     width: 264px;
     height: 388px;
@@ -109,11 +115,6 @@
     @include media(desktop) {
       width: 66px;
       height: 48px;
-    }
-  }
-  @include media(desktop) {
-    & .swiper-slide-active .back {
-      background-color: #f9e000;
     }
   }
 
