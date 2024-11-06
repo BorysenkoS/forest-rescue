@@ -1,107 +1,104 @@
 .footer {
   background-color: #8da93b;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: 100%;
-  height: auto;
-  position: relative;
+
+  @include media(desktop) {
+    position: relative;
+  }
 
   .container-footer {
-    margin: 0 auto;
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
-    padding: 32px 16px;
-    width: 320px;
+    width: 288px;
+    padding: 24px 16px 24px 16px;
 
     @include media(desktop) {
       width: 1200px;
+      padding: 34px 72px 34px 72px;
     }
-  }
 
-  .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+    .logo-container {
+      display: flex;
+      align-items: center;
 
-  .footer-title {
-    font-family: 'Cherry Bomb', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.0012em;
-    color: #f9e000;
-    -webkit-text-stroke: #db4200;
-    width: 88px;
-    text-shadow: 2px 2px 0px #db4200, -2px 2px 0px #db4200, 2px -2px 0px #db4200,
-      -2px -2px 0px #db4200;
-  }
+      width: 136px;
+      height: 40px;
+      gap: 8px;
 
-  .burunduk {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #f9e000;
-    border-radius: 8px;
-  }
+      @include media(desktop) {
+        width: 202px;
+        height: 72px;
+        gap: 16px;
+      }
 
-  .links-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-left: auto;
-    // gap: 8px;
-  }
+      .burunduk {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid #f9e000;
 
-  .link {
-    font-family: Josefin Sans, sans-serif;
-    color: #112e16;
-    font-weight: 500;
-    @include font(12, 16);
-    text-decoration: underline;
+        @include media(desktop) {
+          width: 72px;
+          height: 72px;
+          border: 2px solid #f9e000;
+        }
+      }
+
+      .footer-title {
+        font-family: 'Cherry Bomb', sans-serif;
+        @include font(12, 16);
+        font-weight: 400;
+        color: #f9e000;
+        text-shadow: 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+          0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+          0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+          0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200;
+
+        @include media(desktop) {
+          @include font(16, 16);
+        }
+      }
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      @include media(desktop) {
+        align-items: end;
+      }
+
+      .link {
+        font-family: 'Josefin Sans', sans-serif;
+        @include font(12, 16);
+        font-weight: 500;
+        color: #112e16;
+        text-decoration: underline;
+
+        @include media(desktop) {
+          @include font(20, 28);
+        }
+      }
+    }
   }
 
   .footer-rights {
-    font-family: Josefin Sans, sans-serif;
-    margin: 0 auto;
-    padding-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
     width: 136px;
-    text-align: center;
-    font-weight: 500;
     @include font(12, 16);
+    font-weight: 500;
     color: #112e16;
-  }
+    text-align: center;
+    padding-bottom: 6px;
 
-  @include media(desktop) {
-    .footer {
-      height: 140px;
-      padding: 28px 72px;
-    }
-
-    .container-footer {
-      width: 1280px;
-    }
-
-    .footer-rights {
+    @include media(desktop) {
       position: absolute;
-      left: 50%;
-      top: 60px;
-      transform: translateX(-50%);
-      @include font(20, 28);
       width: 400px;
-    }
-
-    .burunduk {
-      width: 72px;
-      height: 72px;
-      border: 2px solid #f9e000;
-    }
-
-    .footer-title {
-      @include font(16, 16);
-      width: 114px;
-    }
-
-    .link {
       @include font(20, 28);
     }
   }
