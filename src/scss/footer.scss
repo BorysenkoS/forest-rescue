@@ -84,6 +84,13 @@
           @include font(20, 28);
         }
       }
+      .link:hover,
+      .link:focus {
+        color: #db4200;
+      }
+      .link:current {
+        color: #457036;
+      }
     }
   }
 

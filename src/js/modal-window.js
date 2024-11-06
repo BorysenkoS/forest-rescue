@@ -15,5 +15,11 @@ function closeModal() {
   }, 500);
 }
 
+document.querySelectorAll('.modal-link').forEach(link => {
+  link.addEventListener('click', () => {
+    closeModal();
+  });
+});
+
 window.openModal = openModal;
 window.closeModal = closeModal;

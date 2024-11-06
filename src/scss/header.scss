@@ -57,7 +57,7 @@
   background-color: $_main_bg_color;
   transition: right 0.5s ease;
 
-  padding: 60px 16px;
+  padding: 15px 16px;
 }
 
 .hidden {
@@ -104,9 +104,6 @@
 }
 
 @include media(desktop) {
-  .header {
-  }
-
   .button-burger-menu {
     display: none;
   }
@@ -116,6 +113,14 @@
     align-items: center;
     gap: 60px;
     margin-left: 58px;
+  }
+
+  .nav-list-item:hover,
+  .nav-list-item:focus {
+    text-shadow: 0 0 3px #457036, 0 0 3px #457036, 0 0 3px #457036,
+      0 0 3px #457036, 0 0 3px #457036, 0 0 3px #457036, 0 0 3px #457036,
+      0 0 3px #457036, 0 0 3px #457036, 0 0 3px #457036, 0 0 3px #457036,
+      0 0 3px #457036, 0 0 3px #457036, 0 0 3px #457036, 0 0 3px #457036;
   }
 
   .logo {
