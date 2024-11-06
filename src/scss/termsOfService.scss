@@ -4,11 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 320px;
   margin: 0 auto;
   padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .link-home {
@@ -61,6 +58,7 @@
   font-family: josefin Sans, sans-serif;
   font-weight: 600;
   @include font(32, 32);
+  letter-spacing: 0.0012em;
   color: #f6f6f6;
   margin: 0 auto;
   font-size: 24px;
@@ -103,8 +101,11 @@ h3 {
 }
 
 @include media(desktop) {
-  .terms-of-service {
-    max-width: 1200px;
+  .terms-title {
+    @include font(48, 72);
+  }
+
+  p {
   }
   .span-back-to-home {
     display: block;
