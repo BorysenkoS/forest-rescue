@@ -95,10 +95,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 26px;
+    // gap: 26px;
     margin-bottom: 30px;
     @include media(desktop) {
-      gap: 750px;
+      gap: 650px !important;
       margin-top: 56px;
     }
   }
@@ -119,10 +119,20 @@
   }
 
   .swiper-button-prev {
-    left: 110px;
+    left: 105px;
   }
   .swiper-button-next {
-    right: 110px;
+    right: 105px;
+  }
+
+  @include media(desktop) {
+    .swiper-button-prev {
+      left: 160px;
+    }
+
+    .swiper-button-next {
+      right: 160px;
+    }
   }
 
   & .swiper-pagination {
