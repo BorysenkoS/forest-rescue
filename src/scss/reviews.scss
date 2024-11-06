@@ -4,7 +4,7 @@
 
   .reviews-section {
     padding: 64px 16px;
-
+    width: 320px;
     position: relative;
   }
 
@@ -35,7 +35,7 @@
   // }
 
   .swiper-slide:nth-child(even) {
-    margin-left: 52px;
+    margin-left: 52px !important;
     transition: margin 0.7s ease; /* Зміщує кожен непарний елемент вправо */
   }
 
@@ -94,7 +94,7 @@
   /* Swiper styles */
 
   .swiper2 {
-    height: 432px !important;
+    height: 448px !important;
     margin-bottom: 24px;
   }
 
