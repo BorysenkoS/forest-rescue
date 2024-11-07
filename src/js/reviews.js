@@ -1,3 +1,5 @@
+// SWIPER
+
 const swiper = new Swiper('.swiper2', {
   direction: 'vertical',
   loop: true,
@@ -10,6 +12,22 @@ const swiper = new Swiper('.swiper2', {
   keyboard: false,
   mousewheel: false,
 });
+
+// Rotate for icons
+
+const buttons = document.querySelectorAll('.btn');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const icon = button.querySelector('.icon');
+
+    if (icon) {
+      icon.classList.toggle('rotate');
+    }
+  });
+});
+
+// Accordion
 
 document.querySelectorAll('.accordion-header').forEach(button => {
   button.addEventListener('click', () => {

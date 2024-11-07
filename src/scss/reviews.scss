@@ -206,6 +206,14 @@
       display: none;
     }
 
+    .icon {
+      transition: transform 0.5s ease;
+    }
+
+    .rotate {
+      transform: rotate(180deg);
+    }
+
     .accordion {
       display: grid;
     }
