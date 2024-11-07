@@ -55,7 +55,9 @@
 
   & .swiper-slide-active {
     @include media(desktop) {
+      transition: margin 0.7s ease;
       margin-top: 280px;
+
       // margin-bottom: 68px;
     }
   }

@@ -2,10 +2,13 @@ import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/bundle';
+
 Swiper.use([Pagination]);
+
 const swiper = new Swiper('.swiper', {
   modules: [Pagination],
   loop: true,
+  speed: 1000,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -20,18 +23,15 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 3,
     },
   },
-  // spaceBetween: 30,
   centeredSlides: true,
 });
 
-// Обробка кліку на кнопку "Далі"
 const nextButton = document.querySelector('.swiper-button-next');
 nextButton.addEventListener('click', () => {
-  swiper.slideNext(300); // Переходить на наступні 2 слайда
+  swiper.slideNext();
 });
 
-// Обробка кліку на кнопку "Назад"
 const prevButton = document.querySelector('.swiper-button-prev');
 prevButton.addEventListener('click', () => {
-  swiper.slidePrev(300); // Переходить на попередні 2 слайда
+  swiper.slidePrev();
 });
