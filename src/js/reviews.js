@@ -5,12 +5,10 @@ const swiper = new Swiper('.swiper2', {
   loop: true,
   slidesPerView: 3,
   speed: 800,
+  allowTouchMove: false,
   navigation: {
     nextEl: '.button-next',
   },
-  simulateTouch: false,
-  keyboard: false,
-  mousewheel: false,
 });
 
 // Rotate for icons
